@@ -12,3 +12,6 @@ RUN apt-get install -yq \
 
 RUN wget -q http://packages.couchbase.com/releases/couchbase-release/couchbase-release-1.0-4-amd64.deb
 RUN dpkg -i couchbase-release-1.0-4-amd64.deb
+
+RUN apt-get update -q
+RUN apt-get install -yq libcouchbase-dev libcouchbase2-bin build-essential
